@@ -33,6 +33,11 @@ Practicing pattern problems builds these core skills — the same logic later he
 
 > A complete collection of **pattern printing problems** solved in **JavaScript**, organized by levels —  
 from basic loops to advanced symmetrical logic — to strengthen your **DSA fundamentals** and **loop control**.
+# 🧩 Pattern Problems – JavaScript
+
+A structured collection of **pattern printing problems** to master **loops**, **symmetry**, and **spatial logic** before diving into Data Structures & Algorithms (DSA).
+
+These patterns strengthen your logical thinking and nested loop control — the foundation for matrix, recursion, and dynamic programming problems.
 
 ---
 
@@ -40,15 +45,15 @@ from basic loops to advanced symmetrical logic — to strengthen your **DSA fund
 
 | Level | Focus | Example Patterns |
 |--------|--------|------------------|
-| 🟩 **Level 1 – Basic Patterns** | Fundamental loop control & 2D iteration | Rectangles, Right Triangles |
+| 🟩 **Level 1 – Basic Patterns** | Fundamental loop control & 2D iteration | Rectangles, Right Triangles, Numbers |
 | 🟦 **Level 2 – Symmetric Patterns** | Space management & mirroring logic | Pyramids, Diamonds, Crowns |
 | 🟥 **Level 3 – Advanced Number Patterns** *(coming soon)* | Mathematical & centered numeric logic | Pascal’s Triangle, Palindromes |
-| 🟧 **Level 4 – Hollow / Complex Patterns** *(coming soon)* | Combining conditions, spacing & logic | Hollow Diamonds, Hourglass |
+| 🟧 **Level 4 – Hollow / Complex Patterns** | Combining conditions, spacing & dual symmetry | Hollow Diamonds, Hourglass, Butterfly |
 
 ---
 
 ## 🟩 [Level 1 – Basic Patterns](./level1-basic/README.md)
-> Learn how nested loops work by controlling **rows** and **columns**.
+> Learn how nested loops work by controlling **rows** and **columns** — the foundation of every pattern problem.
 
 | # | Pattern Name | File Link |
 |---|---------------|-----------|
@@ -59,49 +64,57 @@ from basic loops to advanced symmetrical logic — to strengthen your **DSA fund
 | 5️⃣ | Inverted Right-Angled Triangle | [invertedRightAngledTriangle.js](./level1-basic/invertedRightAngledTriangle.js) |
 | 6️⃣ | Inverted Numbered Right-Angled Pyramid | [invertedNumberedRightAngledPyramid.js](./level1-basic/invertedNumberedRightAngledPyramid.js) |
 | 7️⃣ | Binary Number Triangle Pattern | [binaryNumberTrianglePattern.js](./level1-basic/binaryNumberTrianglePattern.js) |
+| 8️⃣ | Increasing Number Triangle Pattern | [increasingNumberTrianglePattern.js](./level1-basic/increasingNumberTrianglePattern.js) |
+| 9️⃣ | Increasing Continuous Number Triangle | [increasingContinuousNumberTriangle.js](./level1-basic/increasingContinuousNumberTriangle.js) |
+| 🔟 | Alphabet Triangle Pattern | [alphabetTrianglePattern.js](./level1-basic/alphabetTrianglePattern.js) |
+| 1️⃣1️⃣ | Reverse Letter Triangle Pattern | [reverseLetterTrianglePattern.js](./level1-basic/reverseLetterTrianglePattern.js) |
+| 1️⃣2️⃣ | Alphabet Ramp Pattern | [alphabetRampPattern.js](./level1-basic/alphabetRampPattern.js) |
+| 1️⃣3️⃣ | Reverse Alphabet Sequence Pattern | [reverseAlphabetSequencePattern.js](./level1-basic/reverseAlphabetSequencePattern.js) |
 
 ---
 
 ## 🟦 [Level 2 – Symmetric Patterns](./level2-symmetric/README.md)
-> Focuses on **symmetry**, **alignment**, and **space handling** using nested loops.
+> Focuses on **center alignment**, **space control**, and **mirroring** logic.
 
 | # | Pattern Name | File Link |
 |---|---------------|-----------|
-| 1️⃣ | Full Star Pyramid | [starPyramid.js](./level2-symmetric/starPyramid.js) |
+| 1️⃣ | Star Pyramid (Full Pyramid) | [starPyramid.js](./level2-symmetric/starPyramid.js) |
 | 2️⃣ | Inverted Star Pyramid | [invertedStarPyramid.js](./level2-symmetric/invertedStarPyramid.js) |
 | 3️⃣ | Diamond Star Pattern | [diamondStarPattern.js](./level2-symmetric/diamondStarPattern.js) |
 | 4️⃣ | Half Diamond Star Pattern | [halfDiamondStarPattern.js](./level2-symmetric/halfDiamondStarPattern.js) |
 | 5️⃣ | Number Crown Pattern | [numberCrownPattern.js](./level2-symmetric/numberCrownPattern.js) |
+| 6️⃣ | Alpha Hill Pattern | [alphaHillPattern.js](./level2-symmetric/alphaHillPattern.js) |
 
 ---
 
-## 🟥 Level 3 – Advanced Number Patterns *(Coming Soon)*
+## 🟥 [Level 3 – Advanced Number Patterns](./level3-advanced/README.md) *(Coming Soon)*
 
 | # | Pattern Name | Description |
 |---|---------------|-------------|
-| 1️⃣ | Pascal’s Triangle | Classic combination-based numeric pyramid |
-| 2️⃣ | Centered Number Pyramid | Symmetrical number pyramid (e.g., 1 22 333) |
+| 1️⃣ | Pascal’s Triangle | Combination-based numeric pyramid |
+| 2️⃣ | Centered Number Pyramid | Centered numeric pyramid (1 22 333 …) |
 | 3️⃣ | Palindromic Number Pyramid | Numbers mirror around the center |
-| 4️⃣ | Increasing-Decreasing Number Sequence | Expanding + shrinking numeric series |
+| 4️⃣ | Increasing–Decreasing Sequence | Expanding + shrinking numeric series |
 
 ---
 
-## 🟧 Level 4 – Hollow / Complex Patterns *(Coming Soon)*
+## 🟧 [Level 4 – Hollow / Complex Patterns](./level4-complex/README.md)
+> Combines **dual symmetry**, **hollow logic**, and **multi-shape construction**.
 
-| # | Pattern Name | Description |
-|---|---------------|-------------|
-| 1️⃣ | Hollow Star Pyramid | Outline-only pyramid pattern |
-| 2️⃣ | Hollow Diamond | Space-centered hollow diamond |
-| 3️⃣ | Hourglass Pattern | Inverted + upright combined symmetry |
-| 4️⃣ | Butterfly Pattern | Wing-like symmetrical structure |
+| # | Pattern Name | File Link |
+|---|---------------|-----------|
+| 1️⃣ | Symmetric Void Pattern | [symmetricVoidPattern.js](./level4-complex/symmetricVoidPattern.js) |
+| 2️⃣ | Symmetric Butterfly Pattern | [symmetricButterflyPattern.js](./level4-complex/symmetricButterflyPattern.js) |
+| 3️⃣ | Hourglass Pattern | [hourglassPattern.js](./level4-complex/hourglassPattern.js) |
+| 4️⃣ | Hollow Diamond Pattern | [hollowDiamondPattern.js](./level4-complex/hollowDiamondPattern.js) |
 
 ---
 
 ## ⚙️ How to Run
-
-Run any pattern file directly with Node.js:
-
+You can execute any file directly with Node.js:
 ```bash
 node level1-basic/rightAngledTriangle.js
+
+---
 
 

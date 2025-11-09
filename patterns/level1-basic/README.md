@@ -369,3 +369,87 @@ F F F F F F
 - Reinforces **row-dependent logic** (different print per row).
 - Foundation for **Alphabet Pyramids**, **Mirrored Patterns**, and **Hollow Alphabets**.
 
+## 🟨 [12. Reverse Alphabet Sequence Pattern](reverseAlphabetSequencePattern.js)
+
+### 🔹 What It Is
+A left-aligned triangle made of alphabets, where each row starts from a **different letter** (decreasing from the bottom of the alphabet) and ends with `F`.  
+This pattern practices **reverse letter logic** and **ASCII arithmetic** in loops.
+
+**Example for `rows = 6`:**
+
+### Output
+````
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+````
+
+
+### 🧠 Logic Breakdown
+- Outer loop → controls rows (from `n` down to `1`).
+- Inner loop → prints from the **current starting letter** up to `'F'`.
+- ASCII math used:
+  - `'A'` = 65  
+  - `'F'` = 70  
+  - Starting character for row `i` = `65 + (n - i)`
+
+---
+
+### 💡 Step-by-Step Example (`n = 6`)
+| Row | Start Letter | Sequence | Output |
+|------|---------------|-----------|---------|
+| 1 | F | F | `F` |
+| 2 | E | E F | `E F` |
+| 3 | D | D E F | `D E F` |
+| 4 | C | C D E F | `C D E F` |
+| 5 | B | B C D E F | `B C D E F` |
+| 6 | A | A B C D E F | `A B C D E F` |
+
+---
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > Nested loops: each row prints a growing number of characters.
+- **Space Complexity:** O(n²)  
+  > Each row is stored as a string in an array.
+
+---
+
+### 🧩 Key Learnings
+- Reinforces **reverse sequence logic** with characters.
+- Strengthens understanding of **ASCII-based progression**.
+- Gateway to **reversed numeric** and **reverse pyramid patterns**.
+
+## 🟩 [13. Binary Number Triangle Pattern](binaryNumberTrianglePattern.js)
+
+### 🔹 What It Is
+A right-angled triangle pattern made of alternating binary digits (`0` and `1`).  
+Each row starts with `1` if the row number is odd, or `0` if the row number is even — and alternates thereafter.
+
+Example for `rows = 5`:
+
+### Output
+1
+01
+101
+0101
+10101
+
+
+### 🧮 Logic Breakdown
+- Each row number `i` determines the **starting bit**:
+  - If `i` is odd → start with `1`
+  - If `i` is even → start with `0`
+- Within a row, bits alternate (`0 → 1 → 0 → 1 …`).
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > Outer loop runs `n` times; inner loop runs up to `i` times, totaling ~n² operations.
+- **Space Complexity:** O(n²)  
+  > Each row (string of binary digits) is stored; total grows quadratically with `n`.
+
+---
+
+

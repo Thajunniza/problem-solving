@@ -140,36 +140,8 @@ Example for `rows = 5`:
   > Each row is stored as a string, and the sum of all characters printed grows quadratically with the number of rows.
 
 
-## 🟩 [5. Binary Number Triangle Pattern](binaryNumberTrianglePattern.js)
 
-### 🔹 What It Is
-A right-angled triangle pattern made of alternating binary digits (`0` and `1`).  
-Each row starts with `1` if the row number is odd, or `0` if the row number is even — and alternates thereafter.
-
-Example for `rows = 5`:
-
-### Output
-1
-01
-101
-0101
-10101
-
-
-### 🧮 Logic Breakdown
-- Each row number `i` determines the **starting bit**:
-  - If `i` is odd → start with `1`
-  - If `i` is even → start with `0`
-- Within a row, bits alternate (`0 → 1 → 0 → 1 …`).
-
-### 🧮 Complexity Analysis
-- **Time Complexity:** O(n²)  
-  > Outer loop runs `n` times; inner loop runs up to `i` times, totaling ~n² operations.
-- **Space Complexity:** O(n²)  
-  > Each row (string of binary digits) is stored; total grows quadratically with `n`.
-
----
-## 🟪 [6. Number Crown Pattern](numberCrownPattern.js)
+## 🟪 [5. Number Crown Pattern](numberCrownPattern.js)
 
 ### 🔹 What It Is
 A **symmetrical numeric pattern** that looks like a crown 👑.  
@@ -193,7 +165,7 @@ with a central gap that gets smaller in each row — forming a perfectly balance
   - The **spaces shrink by 2** per row.
   - The numbers grow outward symmetrically from the center.
 
----
+
 
 ### 🧠 Example Breakdown for `rows = 5`
 
@@ -205,7 +177,7 @@ with a central gap that gets smaller in each row — forming a perfectly balance
 | 4 | 1234 | 2 | 4321 | `1234  4321` |
 | 5 | 12345 | 0 | 54321 | `1234554321` |
 
----
+
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -214,7 +186,7 @@ with a central gap that gets smaller in each row — forming a perfectly balance
 - **Space Complexity:** O(n²)  
   > Each row (numbers + spaces) is stored as a string → total memory usage grows quadratically with `n`.
 
----
+
 
 ### 🧩 Key Learnings
 - Reinforces **mirror symmetry** using numbers.  
@@ -223,9 +195,64 @@ with a central gap that gets smaller in each row — forming a perfectly balance
 
 ---
 
+## 🟦 [6. Alpha Hill Pattern](alphaHillPattern.js)
 
+### 🔹 What It Is
+A **symmetric pyramid pattern** made of alphabets, where letters increase from `A` to a midpoint  
+and then decrease back to `A` — forming a perfect **hill-like shape**.  
+
+It’s also called the **Alphabet Pyramid** or **Character Hill Pattern**.
+
+**Example for `rows = 5`:**
+
+### Output
+````
+     A
+    ABA
+   ABCBA
+  ABCDCBA
+ ABCDEDCBA
+ABCDEFEDCBA
+````
+---
+
+### 🧠 Logic Breakdown
+- Outer loop → controls the number of rows.
+- Inner logic has **three parts**:
+  1️⃣ Spaces → printed before the letters to center the pyramid.  
+  2️⃣ Ascending alphabets → from `'A'` up to the row index.  
+  3️⃣ Descending alphabets → from (row index - 1) back to `'A'`.
+
+- Use ASCII values: `'A'` = 65 → `String.fromCharCode(65 + j)`.
 
 ---
+
+### 💡 Step-by-Step Example (`rows = 5`)
+
+| Row | Spaces | Ascending | Descending | Output |
+|------|---------|------------|-------------|---------|
+| 1 | 4 | A | — | `A` |
+| 2 | 3 | A B | A | `A B A` |
+| 3 | 2 | A B C | B A | `A B C B A` |
+| 4 | 1 | A B C D | C B A | `A B C D C B A` |
+| 5 | 0 | A B C D E | D C B A | `A B C D E D C B A` |
+
+---
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > Each row includes spaces + ascending + descending characters.
+- **Space Complexity:** O(n²)  
+  > The pattern is stored line by line in an array.
+
+---
+
+### 🧩 Key Learnings
+- Introduces **symmetry and mirroring** logic.  
+- Combines **character progression** with **center alignment**.  
+- Core concept for **Alphabet Diamonds** and **Palindromic Pyramids**.
+
+
 
 ## 🧩 Summary
 
