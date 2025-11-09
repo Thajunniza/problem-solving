@@ -233,3 +233,51 @@ Unlike the basic number triangle that always starts from `1`, here each row begi
 - Builds understanding of **dynamic loop start points**.  
 - Strengthens **control over nested loops** and arithmetic within them.  
 - Helps bridge simple number patterns with **index-based logic** problems.
+
+
+## 🟨 [9. Alphabet Triangle Pattern](alphabetTrianglePattern.js)
+
+### 🔹 What It Is
+A right-angled triangle pattern made up of **alphabets**, where each row prints letters sequentially from `'A'` up to the current row index.
+
+**Example for `rows = 6`:**
+### Output
+````
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D E F
+````
+
+### 🧠 Logic Breakdown
+- Outer loop → controls the number of rows.
+- Inner loop → prints alphabets starting from `'A'` for each row.
+- Use **ASCII values** to generate alphabets dynamically:
+  - `'A'` = 65 → `String.fromCharCode(65 + j)`
+
+---
+
+### 💡 Step-by-Step Example (`rows = 4`)
+| Row | Alphabets Printed | Output |
+|------|------------------|---------|
+| 1 | A | `A` |
+| 2 | A, B | `A B` |
+| 3 | A, B, C | `A B C` |
+| 4 | A, B, C, D | `A B C D` |
+
+---
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > Outer loop runs `n` times; inner loop prints `i` letters each time.
+- **Space Complexity:** O(n²)  
+  > Each row string (with letters) is stored in result[].
+
+---
+
+### 🧩 Key Learnings
+- Introduces **character-based pattern logic** using ASCII.
+- Strengthens **nested loop understanding** with different data types.
+- Builds foundation for **alphabet pyramids and mirrored patterns**.
