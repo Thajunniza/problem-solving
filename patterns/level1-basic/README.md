@@ -179,14 +179,12 @@ This helps you understand **how variables maintain state across nested loops**.
 - **Space Complexity:** O(n²)  
   > Each row (string of numbers) is stored in an array.
 
----
-
 ### 🧩 Key Learnings
 - Learn how to **carry variable state across loop iterations**.  
 - Strengthens **row-column logic** and **sequence tracking**.  
 - Foundational for number-based logic problems and DSA patterns.
 
-
+---
 
 ## 🟨 [8. Increasing Number Triangle Pattern](increasingNumberTrianglePattern.js)
 
@@ -210,7 +208,6 @@ Unlike the basic number triangle that always starts from `1`, here each row begi
 - Inner loop → starts from **current row number** and prints up to `i + (i - 1)`
 - Each row begins at its row index and increments the number sequentially.
 
----
 
 ### 💡 Step-by-Step Example (`rows = 5`)
 | Row | Start | Count | Numbers Printed | Output |
@@ -221,7 +218,6 @@ Unlike the basic number triangle that always starts from `1`, here each row begi
 | 4 | 4 | 4 | 4, 5, 6, 7 | `4567` |
 | 5 | 5 | 5 | 5, 6, 7, 8, 9 | `56789` |
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -234,7 +230,7 @@ Unlike the basic number triangle that always starts from `1`, here each row begi
 - Strengthens **control over nested loops** and arithmetic within them.  
 - Helps bridge simple number patterns with **index-based logic** problems.
 
-
+---
 ## 🟨 [9. Alphabet Triangle Pattern](alphabetTrianglePattern.js)
 
 ### 🔹 What It Is
@@ -257,7 +253,6 @@ A B C D E F
 - Use **ASCII values** to generate alphabets dynamically:
   - `'A'` = 65 → `String.fromCharCode(65 + j)`
 
----
 
 ### 💡 Step-by-Step Example (`rows = 4`)
 | Row | Alphabets Printed | Output |
@@ -267,7 +262,6 @@ A B C D E F
 | 3 | A, B, C | `A B C` |
 | 4 | A, B, C, D | `A B C D` |
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -275,9 +269,103 @@ A B C D E F
 - **Space Complexity:** O(n²)  
   > Each row string (with letters) is stored in result[].
 
----
 
 ### 🧩 Key Learnings
 - Introduces **character-based pattern logic** using ASCII.
 - Strengthens **nested loop understanding** with different data types.
 - Builds foundation for **alphabet pyramids and mirrored patterns**.
+---
+
+## 🟨 [10. Reverse Letter Triangle Pattern](reverseLetterTrianglePattern.js)
+
+### 🔹 What It Is
+A reverse right-angled triangle made of **alphabets**, where each row starts from `'A'` and ends with one fewer letter than the previous row.  
+This pattern helps practice **loop decrementing** and controlling **row-to-column relationships** in reverse order.
+
+**Example for `rows = 5`:**
+### Output
+````
+A B C D E
+A B C D
+A B C
+A B
+A
+````
+
+### 🧠 Logic Breakdown
+- Outer loop → controls **rows**.
+- Inner loop → prints alphabets starting from `'A'` up to `(n - i)`th alphabet in each row.
+- Use ASCII values for letter generation:  
+  `'A'` = 65 → `String.fromCharCode(65 + j)`.
+
+### 💡 Step-by-Step Example (`rows = 5`)
+| Row | Letters Printed | Output |
+|------|------------------|---------|
+| 1 | A, B, C, D, E | `A B C D E` |
+| 2 | A, B, C, D | `A B C D` |
+| 3 | A, B, C | `A B C` |
+| 4 | A, B | `A B` |
+| 5 | A | `A` |
+
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > The outer loop runs `n` times, and the inner loop runs decreasingly (`n`, `n-1`, … 1).
+- **Space Complexity:** O(n²)  
+  > Each row is stored as a string, leading to a quadratic space footprint.
+
+
+### 🧩 Key Learnings
+- Builds understanding of **reverse iteration** in nested loops.
+- Reinforces **ASCII manipulation** for dynamic letter generation.
+- Great introduction to **pattern mirroring** and **loop decrement logic**.
+
+---
+## 🟨 [11. Alphabet Ramp Pattern](alphabetRampPattern.js)
+
+### 🔹 What It Is
+A right-angled triangle made of **repeating alphabets**,  
+where the letter of each row matches the row index — i.e.,  
+Row 1 prints 'A', Row 2 prints 'B B', Row 3 prints 'C C C', and so on.
+
+**Example for `rows = 6`:**
+
+### Output
+````
+A
+B B
+C C C
+D D D D
+E E E E E
+F F F F F F
+````
+
+### 🧠 Logic Breakdown
+- Outer loop → controls the **number of rows**.
+- Inner loop → prints the **same letter repeatedly** for that row.
+- Letter to print = `'A' + i` → use `String.fromCharCode(65 + i)`.
+
+
+### 💡 Step-by-Step Example (`rows = 5`)
+| Row | Letter | Repetitions | Output |
+|------|----------|--------------|---------|
+| 1 | A | 1 | `A` |
+| 2 | B | 2 | `B B` |
+| 3 | C | 3 | `C C C` |
+| 4 | D | 4 | `D D D D` |
+| 5 | E | 5 | `E E E E E` |
+
+
+
+### 🧮 Complexity Analysis
+- **Time Complexity:** O(n²)  
+  > Each of the `n` rows prints up to `i` characters → total ≈ n² operations.
+- **Space Complexity:** O(n²)  
+  > Each row is stored as a string in result[].
+
+
+### 🧩 Key Learnings
+- Builds comfort with **ASCII manipulation** and **loop-based repetition**.
+- Reinforces **row-dependent logic** (different print per row).
+- Foundation for **Alphabet Pyramids**, **Mirrored Patterns**, and **Hollow Alphabets**.
+
