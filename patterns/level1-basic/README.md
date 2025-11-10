@@ -25,7 +25,8 @@ Example for `rows = 3` and `cols = 5`:
 - **Space Complexity:** O(row × column)  
   > Because we store the entire pattern in an array of strings.
 
-  ---
+---
+
   ## 🟨 [2. Right-Angled Triangle](rightAngledTriangle.js)
 
 ### 🔹 What It Is
@@ -48,7 +49,8 @@ Example for `rows = 4`:
 - **Space Complexity:** O(n²)  
   > Because we store the entire pattern (sum of 1 + 2 + ... + n stars).
 
-  ---
+---
+
   ## 🟥 [3. Right-Angled Numbered Pyramid](rightAngledNumberedPyramid.js)
 
 ### 🔹 What It Is
@@ -71,6 +73,8 @@ Example for `rows = 5`:
 - **Space Complexity:** O(n²)  
   > Each row is stored as a growing string in the pattern array.
 
+---
+
 ## 🟫 [4. Right-Angled Number Pyramid – II](rightAngledNumberPyramidII.js)
 
 ### 🔹 What It Is
@@ -92,6 +96,8 @@ Example for `rows = 5`:
   > Outer loop runs `n` times; inner loop runs `i` times for each row to print the row number repeatedly.
 - **Space Complexity:** O(n²)  
   > Each row is stored as a string with a length equal to its row number.
+
+---
 
 ## 🟦 [5. Inverted Right-Angled Pyramid](invertedRightAngledPyramid.js)
 
@@ -116,6 +122,7 @@ Example for `rows = 5`:
 - **Space Complexity:** O(n²)  
   > Each row is stored as a string of decreasing length.
 
+---
 ## 🟩 [6. Inverted Numbered Right-Angled Pyramid](invertedNumberedRightAngledPyramid.js)
 
 ### 🔹 What It Is
@@ -160,7 +167,6 @@ This helps you understand **how variables maintain state across nested loops**.
 - Inner loop → prints `i + 1` numbers in each row.
 - Maintain a **counter variable (`num`)** that starts from 1 and increases with every number printed.
 
----
 
 ### 💡 Step-by-Step Example (`rows = 5`)
 | Row | Numbers Printed | Output |
@@ -171,7 +177,6 @@ This helps you understand **how variables maintain state across nested loops**.
 | 4 | 7, 8, 9, 10 | `7 8 9 10` |
 | 5 | 11, 12, 13, 14, 15 | `11 12 13 14 15` |
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -356,7 +361,6 @@ F F F F F F
 | 5 | E | 5 | `E E E E E` |
 
 
-
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
   > Each of the `n` rows prints up to `i` characters → total ≈ n² operations.
@@ -369,6 +373,7 @@ F F F F F F
 - Reinforces **row-dependent logic** (different print per row).
 - Foundation for **Alphabet Pyramids**, **Mirrored Patterns**, and **Hollow Alphabets**.
 
+---
 ## 🟨 [12. Reverse Alphabet Sequence Pattern](reverseAlphabetSequencePattern.js)
 
 ### 🔹 What It Is
@@ -395,7 +400,6 @@ A B C D E
   - `'F'` = 70  
   - Starting character for row `i` = `65 + (n - i)`
 
----
 
 ### 💡 Step-by-Step Example (`n = 6`)
 | Row | Start Letter | Sequence | Output |
@@ -407,7 +411,6 @@ A B C D E
 | 5 | B | B C D E F | `B C D E F` |
 | 6 | A | A B C D E F | `A B C D E F` |
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -415,13 +418,13 @@ A B C D E
 - **Space Complexity:** O(n²)  
   > Each row is stored as a string in an array.
 
----
 
 ### 🧩 Key Learnings
 - Reinforces **reverse sequence logic** with characters.
 - Strengthens understanding of **ASCII-based progression**.
 - Gateway to **reversed numeric** and **reverse pyramid patterns**.
 
+---
 ## 🟩 [13. Binary Number Triangle Pattern](binaryNumberTrianglePattern.js)
 
 ### 🔹 What It Is

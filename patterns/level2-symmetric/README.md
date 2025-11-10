@@ -59,6 +59,8 @@ where each row contains an odd number of stars and is aligned symmetrically usin
 Since we repeat that for every row, the total number of operations is roughly proportional to the sum of the first n integers — which gives O(n²).
 Similarly, since we store each row, the space complexity is also O(n²).” 
 
+---
+
 ## 🟧 [2. Inverted Star Pyramid (Inverted Full Pyramid)](invertedStarPyramid.js)
 
 ### 🔹 What It Is
@@ -82,6 +84,7 @@ Example for `rows = 5`:
 - **Space Complexity:** O(n²)  
   > Each row (containing spaces and stars) is stored in an array, and total characters across all rows sum up to O(n²).
 
+---
 
 ## 🟪 [3. Diamond Star Pattern](diamondStarPattern.js)
 
@@ -109,6 +112,7 @@ Example for `rows = 5`:
 - **Space Complexity:** O(n²)  
   > Each row (spaces + stars) is stored as a string, and total characters across all rows grow quadratically with `n`.
 
+---
 
 ## 🟫 [4. Half Diamond Star Pattern](halfDiamondStarPattern.js)
 
@@ -140,6 +144,7 @@ Example for `rows = 5`:
   > Each row is stored as a string, and the sum of all characters printed grows quadratically with the number of rows.
 
 
+---
 
 ## 🟪 [5. Number Crown Pattern](numberCrownPattern.js)
 
@@ -214,7 +219,6 @@ It’s also called the **Alphabet Pyramid** or **Character Hill Pattern**.
  ABCDEDCBA
 ABCDEFEDCBA
 ````
----
 
 ### 🧠 Logic Breakdown
 - Outer loop → controls the number of rows.
@@ -225,7 +229,6 @@ ABCDEFEDCBA
 
 - Use ASCII values: `'A'` = 65 → `String.fromCharCode(65 + j)`.
 
----
 
 ### 💡 Step-by-Step Example (`rows = 5`)
 
@@ -237,7 +240,6 @@ ABCDEFEDCBA
 | 4 | 1 | A B C D | C B A | `A B C D C B A` |
 | 5 | 0 | A B C D E | D C B A | `A B C D E D C B A` |
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²)  
@@ -245,14 +247,13 @@ ABCDEFEDCBA
 - **Space Complexity:** O(n²)  
   > The pattern is stored line by line in an array.
 
----
 
 ### 🧩 Key Learnings
 - Introduces **symmetry and mirroring** logic.  
 - Combines **character progression** with **center alignment**.  
 - Core concept for **Alphabet Diamonds** and **Palindromic Pyramids**.
 
-
+---
 
 ## 🧩 Summary
 
@@ -262,8 +263,8 @@ ABCDEFEDCBA
 | 2️⃣ | Inverted Star Pyramid | Reverse symmetry | Vertical |
 | 3️⃣ | Diamond Star Pattern | Combined mirror logic | Vertical + Horizontal |
 | 4️⃣ | Half Diamond Star Pattern | Dual triangular reflection | Vertical |
-| 5️⃣ | Binary Number Triangle | Alternating logic pattern | Left-aligned |
-| 6️⃣ | Number Crown Pattern | Numeric mirror with shrinking space | Vertical |
+| 5️⃣ | Number Crown Pattern | Numeric mirror with shrinking space | Vertical |
+| 6️⃣ | Alpha Hill Pattern | Alphabet symmetric pyramid pattern | Vertical |
 
 ---
 

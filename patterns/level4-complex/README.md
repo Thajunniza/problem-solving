@@ -43,28 +43,24 @@ Symmetric Void Pattern
 ````
 
 
----
-
 ### 🧠 Logic Breakdown
 - For each row in the **top half (n → 1)**:
   - Print stars on the left and right wings.
   - Between them, print spaces equal to `2 × (n - i)`.
 - Repeat the same structure **bottom-up (1 → n)**.
 
----
 
 ### 🧮 Complexity Analysis
 - **Time Complexity:** O(n²) → nested iteration for rows × columns.  
 - **Space Complexity:** O(n²) → storing pattern lines in an array.
 
----
 
 ### 🧩 Key Learnings
 - Strengthens understanding of **two-sided symmetry**.
 - Combines **incremental and decremental logic**.
 - Builds foundation for **Hourglass** and **Butterfly Mirror** patterns.
 
-
+---
 ## 🟦 [2. Symmetric Butterfly Pattern](symmetricButterflyPattern.js)
 
 ### 🔹 What It Is
@@ -75,6 +71,7 @@ A compact symmetric butterfly shape formed using `*`, where two mirrored wings e
 
 ### Output
 Symmetric Butterfly Pattern
+````
 *          *
 **        **
 ***      ***
@@ -85,6 +82,7 @@ Symmetric Butterfly Pattern
 ****    ****
 ***      ***
 **        **
+````
 
 ### 🧠 Logic Breakdown
 - Pattern has **2 × n - 1** total rows.
@@ -94,18 +92,52 @@ Symmetric Butterfly Pattern
   - **Right wing:** `i` stars  
 - For the **bottom half**, mirror the top half (decreasing order).
 
----
 
 ### 🧮 Complexity
 - **Time Complexity:** O(n²) → nested iteration over rows and columns  
 - **Space Complexity:** O(n²) → storing all pattern lines
 
----
 
 ### 🧩 Key Learnings
 - Builds symmetry using mirrored left and right triangles.
 - Reinforces center-gap control logic.
 - Foundation for **hourglass** and **butterfly-void** variants.
+
+---
+## 🟧  [3. Hourglass Pattern](hourglassPattern.js)
+
+###🔹 What It Is
+The Hourglass Pattern is a vertically symmetric shape formed by combining an inverted pyramid on top and a normal pyramid below. It resembles an hourglass or sand timer.
+Example for n = 5:
+
+Output
+```
+*********
+ *******
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
+````
+
+## 🧠 Logic Breakdown
+- The pattern has 2 × n - 1 total rows.
+- It consists of two parts:
+- Top half (inverted pyramid):
+  Spaces = i
+  Stars = 2 × (n - i) - 1
+- Bottom half (normal pyramid):
+  Spaces = n - i - 1
+  Stars = 2 × i + 1
+- Each row is built using a combination of spaces and stars to maintain symmetry.
+
+
+### 🧮 Complexity
+Time Complexity: O(n²) → nested loops for rows × columns
+Space Complexity: O(n²) → storing all pattern lines (if returned as a string)
 
 ---
 ## 🧩 Summary
