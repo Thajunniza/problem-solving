@@ -123,22 +123,35 @@ Output
 *********
 ````
 
-## 🧠 Logic Breakdown
-- The pattern has 2 × n - 1 total rows.
-- It consists of two parts:
-- Top half (inverted pyramid):
-  Spaces = i
-  Stars = 2 × (n - i) - 1
-- Bottom half (normal pyramid):
-  Spaces = n - i - 1
-  Stars = 2 × i + 1
-- Each row is built using a combination of spaces and stars to maintain symmetry.
-
-
 ### 🧮 Complexity
 Time Complexity: O(n²) → nested loops for rows × columns
 Space Complexity: O(n²) → storing all pattern lines (if returned as a string)
 
+---
+## 🟥 [4. Hollow Diamond Pattern](hollowDiamondPattern.js)
+
+### 🔹 What It Is  
+The **Hollow Diamond Pattern** prints a diamond outline using `*`, with a hollow interior.  
+It’s formed by combining a **hollow upward triangle** and a **hollow inverted triangle**, meeting at the tips.
+
+**Example for `n = 5`:**
+
+### Output
+````
+````
+
+### 🧮 Complexity
+- **Time Complexity:** `O(n²)` → nested loops for rows × columns  
+- **Space Complexity:**  
+  - `O(n²)` if storing all lines  
+  - `O(1)` extra if printing directly
+
+
+### 🧩 Key Learnings
+- Practice **conditional printing** (edges-only vs interior)
+- Master **dual symmetry** (vertical + horizontal)
+- Reinforce **space calculation**: outer vs inner gaps
+- Bridges simple pyramids to more complex **outline shapes**
 ---
 ## 🧩 Summary
 
