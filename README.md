@@ -34,10 +34,12 @@ Pattern printing, recursion, and basic math problems are the **foundation blocks
 ## 🧩 [Patterns](./patterns/README.md)
 > Learn to control loops, spaces, and sequences to visualize logic.
 
-| Level | Focus | Examples |
-|-------|--------|-----------|
-| 🟢 **Level 1 – Basic** | Right-angled structures, row-column control | Solid Rectangle, Number Pyramid |
-| 🔵 **Level 2 – Symmetric** | Spacing & mirroring | Diamond, Half-Diamond, Number Crown |
+| Level | Focus | Key Concepts | Example Patterns |
+|-------|-------|--------------|------------------|
+| 🟩 **Level 1 – Basic Patterns** | Loop control & 2D iteration | Rows, columns, nested loops | Solid Rectangle, Right Triangles, Number Pyramids |
+| 🟦 **Level 2 – Symmetric Patterns** | Space management & mirroring | Center alignment, vertical symmetry | Star Pyramid, Diamond, Number Crown |
+| 🟥 **Level 3 – Advanced Number Patterns** *(coming soon)* | Mathematical logic & centered numbers | Combinatorics, palindromes, sequences | Pascal’s Triangle, Palindromic Pyramid |
+| 🟧 **Level 4 – Hollow / Complex Patterns** | Conditional printing & dual symmetry | Hollow shapes, mirrored wings, multi-part logic | Hollow Diamond, Hourglass, Symmetric Butterfly |
 
 ---
 

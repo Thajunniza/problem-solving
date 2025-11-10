@@ -1,0 +1,46 @@
+
+
+
+/**
+ * Solution Explanation: Centered Number Pyramid
+ *
+ * Goal:
+ * Print a centered numeric pyramid where row i (1-indexed) contains the digit i
+ * repeated i times. Alignment is achieved with left padding; optionally, we can
+ * keep a fixed total width for perfectly centered rows in a rectangular grid.
+ *
+ * Example for n = 5 (trimmed; no trailing spaces):
+ *     1
+ *    22
+ *   333
+ *  4444
+ * 55555
+ *
+ * Complexity:
+ * - Time Complexity : O(n^2)   // total characters across all lines is ~ n(n+1)/2 plus padding
+ * - Space Complexity: O(n^2)   // if collecting lines; O(1) extra if streaming to console
+ *
+ * Edge Cases:
+ * - n = 1  → "1"
+ * - Large n → consider performance of string repetitions and printing
+ * - Input validation: throw if n is not an integer >= 1
+
+
+/**
+ * @param {number} numRows
+ * @return {string[]} result
+ */
+var generateCenteredNumberPyramid = function (numRows) {
+    let result = [];
+    for (let i = 1; i <= numRows; i++) {
+        let line = "";
+        for( let j = 1 ; j <= numRows; j++){
+            line += j <= (numRows - i) ? " " : i + " " ;
+        }
+        result.push(line);
+        }
+    return result;
+};
+
+let pattern = generateCenteredNumberPyramid(5);
+pattern.forEach(line => console.log(line));
