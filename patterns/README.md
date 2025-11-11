@@ -87,7 +87,7 @@ These patterns strengthen your logical thinking and nested loop control — the 
 
 ---
 
-## 🟥 [Level 3 – Advanced Number Patterns](./level3-advanced/README.md) *(Coming Soon)*
+## 🟥 [Level 3 – Advanced Number Patterns](./level3-advanced/README.md)
 
 | # | Pattern Name | Description |
 |---|---------------|-------------|
