@@ -9,7 +9,7 @@ class Stack:
     def __init__(self):
         self.items = []
 # inserts an item    
-    def push(self,item):
+    def append(self,item):
         self.items.append(item)
 # gives the last item and remove it    
     def pop(self):
@@ -25,13 +25,3 @@ class Stack:
         if not self.isEmpty():
             return self.items[-1]    
 
-myStack = Stack()
-myStack.push(1)
-myStack.push(3)
-myStack.push(5)
-myStack.push(7)
-print(myStack.getStack())
-print(myStack.pop())
-print(myStack.getStack())
-print(myStack.isEmpty())
-print(myStack.peek())
