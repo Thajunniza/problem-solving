@@ -1,6 +1,6 @@
 # problem-solving
 Basic Problem Solvings
-# 🧩 Problem Solving with JavaScript
+# 🧩 Problem Solving with JavaScript / Python
 
 Welcome to the **Problem Solving Hub** —  
 a structured collection of coding challenges designed to strengthen your **logic**, **loop control**, and **analytical skills** before diving deep into Data Structures and Algorithms (DSA).
